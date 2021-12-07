@@ -94,9 +94,10 @@ void actuateWFPPFGReport(GpioToButtonSets::F1::ButtonSet buttonSet) {
         .r=buttonSet.up,
         .zl=buttonSet.ls,
         .zr=buttonSet.ms,
-        .minus=buttonSet.mx,
-        .plus=buttonSet.start,
+        .minus=buttonSet.mx||buttonSet.startL,
+        .plus=buttonSet.startR,
         .pad=0,
+        .home=buttonSet.start,
         //.home=buttonSet.start && !(buttonSet.ms), // Start -> Home
         .photo=buttonSet.ms && buttonSet.start, // MS -> Photo
         .pad2=0,

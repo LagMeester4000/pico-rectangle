@@ -22,6 +22,8 @@ const PinMapping pinMappings[] = {
     { 5, &ButtonSet::l },
     { 6, &ButtonSet::mx },
     { 7, &ButtonSet::my },
+    { 8, &ButtonSet::startL },
+    { 9, &ButtonSet::startR },
     { 12, &ButtonSet::cUp },
     { 13, &ButtonSet::cLeft },
     { 14, &ButtonSet::a },
